@@ -1,0 +1,41 @@
+####################### JOB FOR LATER
+import math
+
+print("\n\nUSER INPUTS")
+print("Enter your Height:")
+
+print("Enter your Height: ")
+height = int(input())
+print("Enter your Weight: ")
+weight = int(input())
+
+BMI = (math.ceil(weight / (math.pow(height,2)) * 10000))
+print("Your BMI is: ")
+print(BMI)
+
+##>>>> ITS WORKING <<<<<< ####
+
+
+
+
+
+
+secret_word = "bottle cap"
+guess = ""
+guess_count = 0
+guess_limit = 5
+out_of_guesses = False
+
+while guess != secret_word and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter a guess: ")
+        guess_count += 1
+    if guess_count != guess_limit:
+        print("You have " + str(guess_count) + " left!")
+    else:
+        out_of_guesses = True
+if out_of_guesses:
+        print("WA WA WA YOU LOSE")
+
+else:
+    print("WELL DONE!")
